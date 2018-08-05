@@ -1,0 +1,95 @@
+html, body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.jumbotron {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.jumbotron-overlay {
+  background-color: rgba(87,90,99,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+}
+
+#intro {
+  background: url("./city.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#profile {
+  background-color: white;
+  padding: 40px 57px;
+  height: 90%;
+}
+
+#profile-container {
+  width: 75%;
+}
+
+.intro-container {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 10px;
+}
+.intro-title {
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+.intro-text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.label {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  color: black;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.description-container {
+  margin: 15px 0;
+}
+
+.description-text {
+  font-size: 20px;
+}
+
+.social-links {
+  padding: 20px 0px;
+  background-color: #5261B9;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials-container i:hover {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.icon {
+  color: white;
+}
+
+.img-responsive {
+    display: block;
+    width: auto;
+    max-height: 100%;
+}
