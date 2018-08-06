@@ -1,31 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link rel="stylesheet" href="./index.css">
     <title>Chanun Sumphanphaisal</title>
   </head>
   <body>
     <div id='intro' class='jumbotron jumbotron-fluid'>
       <div class='jumbotron-overlay'>
-        <nav class="navbar sticky-top navbar-light"> <!-- <<< HERE -->
-        <div id='profile-container' class='container'>
+        <div class='landing-text'>
+          <span id='myheader'>
+            <h1 id='my-name' class='landing-header'>I'm Chanun</h1>
+            <p id='my-occupation' class='landing-body'></p>
+          </span>
+        </div>
+      </div>
+      <div class='about-me container-fluid'>
+        <div id='profile-container'>
           <div id='profile'>
-            <div class='row'>
-              <div class='col-sm-5'>
-                <img class='img-fluid profile-pic' src="chanun.jpeg" alt="Chanun">
+            <div class='tab-container'>
+              <p id='profile-tab' class='selected-tab'>profile</p>
+              <p id='skills-tab'>skills</p>
+            </div>
+            <div id='profile-info' class='row'>
+              <div class='col-sm-6'>
+                <img class='img-fluid profile-pic' src="profile.jpg" alt="Chanun">
               </div>
-              <div class='col-sm-7'>
+              <div class='col-sm-6'>
                 <div class='intro-container'>
-                  <p class='intro-title'>I'm <span class='bold'>Chanun Sumphanphaisal</span></p>
-                  <p class='intro-text'>Developer and Student</p>
+                  <p class='intro-text'>Chanun Sumphanphaisal</p>
                 </div>
                 <div class= 'description-container'>
                   <p class='description-text'><span class='label'>Position: </span>Software Engineer Intern</p>
@@ -35,19 +48,180 @@
                 </div>
               </div>
             </div>
+            <div id='skills-info' class='row hidden'>
+              <div class='col-sm-12'>
+                <table class='table table-sm borderless'>
+                  <thead>
+                    <tr>
+                      <th scope="col">Languages</th>
+                      <th scope="col">Frameworks</th>
+                      <th scope="col">Databases</th>
+                      <th scope="col">Tools/Other</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Javascript (ES6)</td>
+                      <td>React</td>
+                      <td>PostgreSQL</td>
+                      <td>Postman</td>
+                    </tr>
+                    <tr>
+                      <td>Html</td>
+                      <td>Redux</td>
+                      <td>MongoDB</td>
+                      <td>Git & Github</td>
+                    </tr>
+                    <tr>
+                      <td>CSS</td>
+                      <td>JQuery</td>
+                      <td>DynamoDB</td>
+                      <td>Restful API</td>
+                    </tr>
+                    <tr>
+                      <td>Python</td>
+                      <td>Node.js</td>
+                      <td>MySQL</td>
+                    </tr>
+                    <tr>
+                      <td>Java</td>
+                      <td>Sequelize</td>
+                    </tr>
+                    <tr>
+                      <td>C++</td>
+                      <td>Express.js</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
           <div class='social-links'>
               <div class='socials-container'>
-                <i class="icon fab fa-linkedin fa-3x"></i>
-                <i class="icon fas fa-envelope fa-3x"></i>
-                <i class="icon fab fa-github fa-3x"></i>
+                <a href='https://www.linkedin.com/in/chanun-sumphanphaisal-0ab137133/'>
+                  <i class="icon fab fa-linkedin fa-2x"></i>
+                </a>
+                <a>
+                  <i class="icon fas fa-envelope fa-2x"></i>
+                </a>
+                <a>
+                  <i class="icon fab fa-github fa-2x"></i>
+                </a>
+              </div>
+          </div>
+        </div>
+        <div class='about-me-side-container'>
+          <p id='about-me-header' class='about-me-header'></p>
+          <p id='skills-header' class='about-me-header hidden'></p>
+          <div id='about-me-body'>
+            <p>Welcome to my portfolio.</p>
+            <p>I'm a <span class='tag-coding-font'>developer/student</span> based in Irvine, California. As a software engineer, I have a passion for <span class='str-coding-font'>web development</span> and enjoy the challenges with building interactive <span class='var-coding-font'>javascript applications.</span></p>
+          </div>
+          <div id='skills-body' class='hidden'>
+            <p>My main area of expertise is <span class='str-coding-font'>frontend development</span> using <span class='tag-coding-font'>React</span> and <span class='tag-coding-font'>Redux</span>.</p>
+            <p>I often work as a fullstack developer, using <span class='var-coding-font'>Node.js</span> to compliment the <span class='str-coding-font'>React</span> frontend.</p>
+          </div>
+          <button class='button'>Resume</button>
+        </div>
+      </div>
+      <div class='resume container-fluid'>
+        <p class='about-me-header'>work experience</p>
+        <div class='experience-container'>
+          <div class='experience-card row'>
+            <div class='experience-pic col-sm-2'>
+              <img class='exp-pic' src="procore.png" alt="procore">
+            </div>
+            <div class='experience-main col-sm-10'>
+              <div class='exp-header'>
+                <div class='exp-title'>
+                  <p>Procore</p>
+                  <p>Software Engineer Intern</p>
+                </div>
+                <div class='exp-info'>
+                  <p>Carpinteria, CA</p>
+                  <p>July 2018 - Current</p>
+                </div>
+              </div>
+              <div class='exp-body'>
+                <p>Collaborate with team to design and produce an internal question and answer tool to help engineers find company related development solutions. Worked closely with React to create reusable components for the app.</p>
+                <div class='tag-container'>
+                  <div class='tag'>javascript</div>
+                  <div class='tag'>react</div>
+                  <div class='tag'>redux</div>
+                  <div class='tag'>html</div>
+                  <div class='tag'>css</div>
+                  <div class='tag'>node</div>
+                  <div class='tag'>express</div>
+                  <div class='tag'>dyanmodb</div>
+                  <div class='tag'>auth0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='experience-container'>
+          <div class='experience-card row'>
+            <div class='experience-pic col-sm-2'>
+              <img class='exp-pic' src="adigami.png" alt="adigami">
+            </div>
+            <div class='experience-main col-sm-10'>
+              <div class='exp-header'>
+                <div class='exp-title'>
+                  <p>Adigami</p>
+                  <p>Software Engineer Co-op</p>
+                </div>
+                <div class='exp-info'>
+                  <p>Irvine, CA</p>
+                  <p>March 2018 - June 2018</p>
+                </div>
+              </div>
+              <div class='exp-body'>
+                <p>Collaborate with team to design and produce an internal question and answer tool to help engineers find company related development solutions. Worked closely with React to create reusable components for the app.</p>
+                <div class='tag-container'>
+                  <div class='tag'>javascript</div>
+                  <div class='tag'>html</div>
+                  <div class='tag'>css</div>
+                  <div class='tag'>ruby</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='experience-container'>
+          <div class='experience-card row'>
+            <div class='experience-pic col-sm-2'>
+              <img class='exp-pic' src="theportal.png" alt="theportal">
+            </div>
+            <div class='experience-main col-sm-10'>
+              <div class='exp-header'>
+                <div class='exp-title'>
+                  <p>The Portal</p>
+                  <p>Software Engineer Intern</p>
+                </div>
+                <div class='exp-info'>
+                  <p>Irvine, CA</p>
+                  <p>June 2017 - May 2018</p>
+                </div>
+              </div>
+              <div class='exp-body'>
+                <p>Collaborate with team to design and produce an internal question and answer tool to help engineers find company related development solutions. Worked closely with React to create reusable components for the app.</p>
+                <div class='tag-container'>
+                  <div class='tag'>javascript</div>
+                  <div class='tag'>react</div>
+                  <div class='tag'>redux</div>
+                  <div class='tag'>node</div>
+                  <div class='tag'>express</div>
+                  <div class='tag'>aws</div>
+                  <div class='tag'>mongoDB</div>
+                  <div class='tag'>postgreSQL</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class='container'>
-        <p>dafadsfasdfas</p>
+      <div id='projects'>
+
       </div>
     </div>
 
@@ -57,5 +231,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.6/dist/typeit.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
