@@ -1,7 +1,7 @@
 html, body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   padding: 0;
   margin: 0;
 }
@@ -35,19 +35,19 @@ html, body {
 .str-coding-font {
   font-family: 'Inconsolata', monospace;
   color: #3b9b6d;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .tag-coding-font {
   font-family: 'Inconsolata', monospace;
   color: #C7723D;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .var-coding-font {
   font-family: 'Inconsolata', monospace;
   color: #ffd152;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .landing-body {
@@ -86,27 +86,28 @@ html, body {
 #profile {
   height: 400px;
   background-color: #fcfcfc;
-  padding: 40px 57px;
+  padding: 25px 40px 0 40px;
   border-radius: 0.5em 0.5em 0 0;
 }
 
-.profile-pic {
-  height: 270px;
+.profile-pic-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #profile-container {
-  width: 50%;
-  height: 100%;
+  width: 55%;
   box-shadow: 0 20px 30px rgba(0,0,0,0.5);
   background-color: #353537;
   border: none;
-  margin: 100px 0;
+  margin: 80px 0;
 }
 
 
 .tab-container {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .tab-container p {
@@ -171,7 +172,7 @@ html, body {
 }
 
 .social-links {
-  padding: 30px 60px;
+  padding: 18px 10px;
   background-color: #ffd152;
   border-radius: 0 0 0.5em 0.5em;
 }
@@ -183,6 +184,12 @@ html, body {
 
 .socials-container i:hover {
   cursor: pointer;
+}
+
+.socials-container a:hover {
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
 
 .bold {
@@ -209,13 +216,14 @@ html, body {
 }
 
 .experience-container {
-  width: 50%;
+  width: 60%;
+  max-width: 1000px;
   margin: 30px;
 }
 
 .experience-card {
   border-radius: 0.5em;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   padding: 25px 15px;;
   background-color: #fcfcfc;
   color: #4a4a4a;
@@ -230,20 +238,20 @@ html, body {
 .exp-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .exp-title {
   font-weight: 700;
+  font-size: 18px;
 }
 
 .exp-info {
   font-style: italic;
-  font-size: 18px;
 }
 
 .exp-body {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .exp-pic {
@@ -252,7 +260,9 @@ html, body {
 
 .tag-container {
   margin-top: 15px;
+  font-size: 8px;
 }
+
 
 .button {
   display: block;
@@ -261,4 +271,53 @@ html, body {
   font-weight: 700;
   background-color: #fcfcfc;
   border: none;
+}
+
+#projects {
+  background-color: #DDDDDD;
+}
+
+.projects-container {
+  padding: 40px;
+}
+
+.projects-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-card {
+  width: 40%;
+  padding: 0 0 20px 0;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #fcfcfc;
+}
+
+.project-desc {
+  padding: 10px 10px 0 10px;
+  font-size: 14px;
+}
+
+.project-title {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.carousel-img {
+  height: 250px;
+}
+
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.footer-social {
+  width: 120px;
+}
+
+.footer-social i {
+  color: #4a4a4a;
 }
