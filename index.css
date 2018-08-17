@@ -291,6 +291,11 @@ html, body {
   font-size: 8px;
 }
 
+.tag {
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
 
 .button {
   display: block;
@@ -322,8 +327,12 @@ html, body {
 }
 
 .project-desc {
-  padding: 10px 10px 0 10px;
+  height: calc( 100% - 250px );
+  padding: 10px 15px 0 15px;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-title {
