@@ -12,6 +12,10 @@ function isScrolledIntoView($elem, $window) {
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
+function scrollNotTop($window) {
+  return $window.height();
+}
+
 $(document).ready(function() {
   var instance2 = new TypeIt('#my-occupation', {
     strings: ["a <span class='str-coding-font'>software engineer</span> & <span class='tag-coding-font'>student</span>"],
@@ -86,6 +90,17 @@ $(document).ready(function() {
           hasRender = true
         }
     }
+
+    if (window.scrollY > 40 && $('.navbar').hasClass('transparent')) {
+      $('.navbar').removeClass('transparent')
+      $('.navbar').addClass('shadow')
+    }
+
+    if (window.scrollY <= 40 && !$('.navbar').hasClass('transparent')) {
+      $('.navbar').addClass('transparent')
+      $('.navbar').removeClass('shadow')
+    }
+    console.log(window.scrollY < 40);
   });
 
 })
