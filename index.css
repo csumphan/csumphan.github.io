@@ -81,7 +81,7 @@ html, body {
 }
 
 #intro {
-  background: url("./mac.jpg") no-repeat center center;
+  background: url("./assets/mac.jpg") no-repeat center center;
   background-size: cover;
 }
 

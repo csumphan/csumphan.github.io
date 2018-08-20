@@ -17,6 +17,12 @@ function scrollNotTop($window) {
 }
 
 $(document).ready(function() {
+
+  if (window.scrollY > 40 && $('.navbar').hasClass('transparent')) {
+    $('.navbar').removeClass('transparent')
+    $('.navbar').addClass('shadow')
+  }
+
   var instance2 = new TypeIt('#my-occupation', {
     strings: ["a <span class='str-coding-font'>software engineer</span> & <span class='tag-coding-font'>student</span>"],
     startDelay: 500,
