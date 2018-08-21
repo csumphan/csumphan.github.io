@@ -321,10 +321,17 @@ html, body {
 }
 
 .project-card {
-  width: 40%;
+  width: 45%;
   padding: 0 0 20px 0;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   background-color: #fcfcfc;
+}
+
+.github-link {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-right: 10px;
+  align-self: flex-end;
 }
 
 .project-desc {
