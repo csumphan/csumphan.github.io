@@ -288,7 +288,7 @@ html, body {
 }
 
 .tag-container {
-  margin-top: 15px;
+  margin: 5px 0 15px 0;
   font-size: 8px;
 }
 
@@ -321,14 +321,18 @@ html, body {
 
 .projects-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .project-card {
   width: 45%;
+  max-width: 750px;
   padding-bottom: 10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   background-color: #fcfcfc;
+  padding: 0;
+  margin: 0 25px;
 }
 
 .github-link {
@@ -353,9 +357,6 @@ html, body {
   margin-right: 5px;
 }
 
-.projects-row {
-  margin-bottom: 50px;
-}
 .carousel-img {
   height: 250px;
 }
