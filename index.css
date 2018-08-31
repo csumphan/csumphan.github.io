@@ -283,6 +283,14 @@ html, body {
   font-size: 14px;
 }
 
+.exp-body-list {
+  list-style-type: disc;
+}
+
+.exp-body-list li {
+  margin: 8px;
+}
+
 .exp-pic {
   border-radius: 50%;
 }
