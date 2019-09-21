@@ -14,7 +14,7 @@ function isScrolledIntoView($elem, $window) {
 
 $(document).ready(function() {
   var instance2 = new TypeIt('#my-occupation', {
-    strings: ["a <span class='str-coding-font'>software engineer</span> & <span class='tag-coding-font'>student</span>"],
+    strings: ["a <span class='str-coding-font'>software engineer</span>"],
     startDelay: 500,
     lifelike: true,
   });
